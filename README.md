@@ -1,1 +1,1 @@
-# wedding_website
+# This is a website for the posting of and commenting upon newly announced weddings.
