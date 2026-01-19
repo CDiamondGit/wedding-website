@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	min-height: 100vh;
+  background: linear-gradient(
+	to bottom, 
+	rgb(181, 92, 107),
+	rgb(183, 125, 135), 
+	rgb(227, 156, 168),
+	rgb(225, 189, 195), 
+	white
+	);
+	background-repeat: no-repeat;
+}
+#testyboy:hover{
+	color: red;
+}
