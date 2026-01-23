@@ -1,3 +1,8 @@
+/*<!--
+Copyright (c) 2026 by Elliott Greenman (https://codepen.io/Egreenman/pen/vYXBbvb)
+Permission is hereby granted, free of charge, to use, copy, modify, and distribute this software under the terms of the MIT License.
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -13,16 +18,16 @@ font-family: Arial, sans-serif;
 
 .logo img {
   display: block;
-  max-height: 75px;
+  max-height: 70px;
   width: auto;
-  margin: 0 20px 0 0;
+  margin: 0 15px 0 0;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px 20px 10px 10px;
+  padding: 5px 15px 5px 15px;
   margin: 20px;
   background-color: #fef5f6;
   border-radius: 15px;
@@ -37,7 +42,6 @@ font-family: Arial, sans-serif;
   font-family: "Cormorant Garamond";
   flex: 1;
   justify-content: space-between;
-  gap: 2rem;
 }
 
 .navbar a {
@@ -49,10 +53,68 @@ font-family: Arial, sans-serif;
 
 .navbar a:not(.logo) {
   display: inline-block;
-  transition: transform 0.1s;
+  transition: transform 0.2s;
 }
 
 .navbar a:not(.logo):hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   color: #c88888;
+}
+
+.feed-map {
+    border-radius: 0 0 0 0;
+    padding-bottom: 0;
+}
+
+.map-area {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+}
+
+#subPageArticle {
+    margin-right: 50px;
+}
+
+#Map {
+    width: 100%;
+    height: auto;
+    max-height: 660px;
+}
+
+path,circle {
+    stroke: #b0b0b0;
+}
+
+path:hover,circle:hover {
+    stroke-linejoin: round;
+    filter: brightness(88%);
+    cursor: pointer;
+}
+
+#NorthernIreland {
+    cursor: not-allowed;
+    fill: #fefdfb !important;
+    filter: brightness(100%);
+    stroke-width: 0;
+}
+
+#info-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 2px solid #10314C;
+    padding: 3px 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+  #subPageArticle {
+      margin-left: 0;
+      margin-right: 0;
+  }
 }
